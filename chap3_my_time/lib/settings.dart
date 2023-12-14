@@ -169,7 +169,7 @@ class _SettingsState extends State<Settings> {
         break;
       case ShortBreak:
         {
-          int short = prefs.getInt(WorkTime)!;
+          int short = prefs.getInt(ShortBreak)!;
           short += value;
           if (short >= 1 && short <= 120) {
             prefs.setInt(ShortBreak, short);
